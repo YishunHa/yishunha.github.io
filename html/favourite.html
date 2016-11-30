@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="../js/mui.js"></script>
+    <link href="../css/mui.css" rel="stylesheet"/>
+    <link href="../css/mui.indexedlist.css" rel="stylesheet" />
+    <link href="../css/icon.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+		mui('.mui-scroll-wrapper').scroll({
+    
+	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+});
+    </script>
+    <style>
+    	html,
+		body {
+				height: 100%;
+				overflow-y: show;
+			}
+		.mui-bar {
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+        .mui-table-view-cell
+        {
+        	color: #000000;
+        }
+		</style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">Favourite</h1>
+</header>
+<div class="mui-content">
+      
+        <div id="slider" class="mui-slider" >
+          <div class="mui-slider-group mui-slider-loop">
+            
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                <img src="img/stange animal.jpg">
+              </a>
+            </div>
+            <!-- first -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="img/ironman3.jpg">
+              </a>
+            </div>
+            <!-- second -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="img/transformer4.jpg">
+              </a>
+            </div>
+            <!-- third -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="img/doctorstanger.jpg">
+              </a>
+            </div>
+            <!-- fouth -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="img/stange animal.jpg">
+              </a>
+            </div>
+            <!-- for cycle play return to first page -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                <img src="img/ironman3.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+          </div>
+        </div>
+        
+        <h1 style="color: #333333; padding-left: 100px; line-height: 20px;">Hottest Movies</h1>
+        
+        <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="html/Bridge of Spies.html">
+                    <img class="mui-media-object" src="img/cover/Birdge of Spies.png">
+                    
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="img/thumbnails.jpg">
+                    
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="img/thumbnails.jpg">
+                    
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="img/thumbnails.jpg">
+                    
+                </a>
+            </li>
+        </ul>
+        
+        
+      
+      
+    </div>  
+			
+
+</body>
+</html>

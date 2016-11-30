@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <script src="js/mui.js"></script>
+    <link href="css/mui.css" rel="stylesheet"/>
+    <link href="css/icon.css" rel="stylesheet"/>
+    <script type="text/javascript">
+	    mui.init();
+
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+<!-- 侧滑导航根容器 -->
+<div class="mui-off-canvas-wrap mui-draggable mui-scalable">
+  <!-- 菜单容器 -->
+  <aside class="mui-off-canvas-left mui-transitioning" id="offCanvasSide">
+    <div class="mui-scroll-wrapper">
+      <div class="mui-scroll">
+      	<img src="img/icon.png"/ style="margin-left: 100px;">
+      	
+        <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="html/Browse.html">
+                        <span class="mui-icon icon icon-map2"></span>
+                        <span class="mui-tab-label">Browse</span>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="html/search.html">
+                     <span class="mui-icon icon icon-search" ></span>
+                     <span class="mui-tab-label" >Search</span>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="html/favourite.html">
+                  <span class="mui-icon icon icon-star-full"></span>
+                  <span class="mui-tab-label">Favourite</span>
+                    </a>
+                </li>
+            </ul>
+        <a style="float: top; margin: 105px; color: white;">Ver:1.0</a>
+      </div>
+    </div>
+  </aside>
+  <!-- main contaner -->
+  <div class="mui-inner-wrap mui-transitioning">
+    <!-- mainpage title -->
+    <header class="mui-bar mui-bar-nav">
+      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+      <h1 class="mui-title">Movie Fans</h1>
+    </header>
+    <div class="mui-content">
+      
+        <div id="slider" class="mui-slider" >
+          <div class="mui-slider-group mui-slider-loop">
+            
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                <img src="img/ironman3.jpg">
+              </a>
+            </div>
+            <!-- first -->
+            <div class="mui-slider-item">
+              <a href="html/Doctor Stange.html">
+                <img src="img/doctorstanger.jpg">
+              </a>
+            </div>
+            <!-- second -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="img/stange animal.jpg">
+              </a>
+            </div>
+            <!-- third -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="img/transformer4.jpg">
+              </a>
+            </div>
+            <!-- fouth -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="img/ironman3.jpg">
+              </a>
+            </div>
+            <!-- for cycle play return to first page -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                <img src="img/doctorstanger.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+          </div>
+        </div>
+        
+        <h1 style="color: #333333; text-align:center; line-height: 20px;">Most Popular</h1>
+        
+        <div class="mui-slider">
+		        <div class="mui-slider-group mui-slider-loop">
+		        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+		            <div class="mui-slider-item mui-slider-item-duplicate">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/ben-hub.jpg">
+		                            <div class="mui-media-body">Ben Hub</div></a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/bad moms.jpg">
+		                            <div class="mui-media-body">Bad Moms</div></a></li>
+		                </ul>
+		            </div>
+		            <div class="mui-slider-item">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/Finding dory.jpg">
+		                            <div class="mui-media-body">Finding Dory</div></a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/wardogs.jpg">
+		                            <div class="mui-media-body">War Dogs</div></a></li>
+		                </ul>
+		            </div>
+		            <div class="mui-slider-item">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/ben-hub.jpg">
+		                            <div class="mui-media-body">Ben Hub</div></a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/bad moms.jpg">
+		                            <div class="mui-media-body">Bad Moms</div></a></li>
+		                </ul>
+		            </div>
+		            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+		            <div class="mui-slider-item mui-slider-item-duplicate">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/Finding dory.jpg">
+		                            <div class="mui-media-body">Finding Dory</div></a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/wardogs.jpg">
+		                            <div class="mui-media-body">War Dogs</div></a></li>
+		                </ul>
+		            </div>
+		        </div>
+		        <div class="mui-slider-indicator" style="position: static;background-color: #EFEFF4;">
+		            <span class="mui-action mui-action-previous mui-icon mui-icon-back" style="color: #000000;"></span>
+		            <div class="mui-number">
+		                <span style="color: ##CF2D28;">1</span> 
+		                <span style="color: #000000;">/ 2</span>
+		            </div>
+		            <span class="mui-action mui-action-next mui-icon mui-icon-forward "style="color: #000000;"></span>
+		        </div>
+		    </div>
+        
+        
+      
+      
+    </div>  
+    <div class="mui-off-canvas-backdrop"></div>
+  </div>
+</div>
+<script type="text/javascript">
+		    
+</script>
+</body>
+</html>
