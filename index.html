@@ -27,19 +27,19 @@
       	
         <ul class="mui-table-view">
                 <li class="mui-table-view-cell">
-                    <a class="mui-navigate-right" href="html/Browse.html">
+                    <a class="mui-navigate-right" href="html/Browse.html" id="openBrowse">
                         <span class="mui-icon icon icon-map2"></span>
                         <span class="mui-tab-label">Browse</span>
                     </a>
                 </li>
                 <li class="mui-table-view-cell">
-                    <a class="mui-navigate-right" href="html/search.html">
+                    <a class="mui-navigate-right" href="html/search.html" id="openSearch">
                      <span class="mui-icon icon icon-search" ></span>
                      <span class="mui-tab-label" >Search</span>
                     </a>
                 </li>
                 <li class="mui-table-view-cell">
-                    <a class="mui-navigate-right" href="html/favourite.html">
+                    <a class="mui-navigate-right" href="html/favourite.html" id="openFavourite">
                   <span class="mui-icon icon icon-star-full"></span>
                   <span class="mui-tab-label">Favourite</span>
                     </a>
@@ -67,8 +67,8 @@
               </a>
             </div>
             <!-- first -->
-            <div class="mui-slider-item">
-              <a href="html/Doctor Stange.html">
+            <div class="mui-slider-item" id="opendoctorstange">
+              <a href="html/Doctor Strange.html">
                 <img src="img/doctorstanger.jpg">
               </a>
             </div>
@@ -162,7 +162,37 @@
   </div>
 </div>
 <script type="text/javascript">
-		    
+	document.getElementById('openBrowse').addEventListener('tap',function(){
+
+    window.location.assign("html/Browse.html"); 
+
+    
+});
+	document.getElementById('openSearch').addEventListener('tap',function(){
+
+    window.location.assign("html/Search.html"); 
+
+    
+});
+	document.getElementById('openSearch').addEventListener('tap',function(){
+
+    window.location.assign("html/Search.html"); 
+
+    
+});
+	document.getElementById('openFavourite').addEventListener('tap',function(){
+
+    window.location.assign("html/Favourite.html"); 
+
+    
+});
+	document.getElementById('opendoctorstange').addEventListener('tap',function(){
+
+    window.location.assign("html/Doctor Strange.html"); 
+
+    
+});
+
 </script>
 </body>
 </html>
