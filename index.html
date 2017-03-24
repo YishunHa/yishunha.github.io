@@ -7,10 +7,19 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title></title>
     <script src="js/mui.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/main.js"></script>
     <link href="css/mui.css" rel="stylesheet"/>
     <link href="css/icon.css" rel="stylesheet"/>
     <script type="text/javascript">
 	    mui.init();
+	    mui('.mui-scroll-wrapper').scroll({deceleration: 0.0005});
+        var slider = mui("#slider");
+        slider.slider({
+            interval: 1000
+        });
+        mui('#offCanvasSideScroll').scroll();
+        mui('#offCanvasContentScroll').scroll();
 
     </script>
     <style>
@@ -23,7 +32,10 @@
   <aside class="mui-off-canvas-left mui-transitioning" id="offCanvasSide">
     <div class="mui-scroll-wrapper">
       <div class="mui-scroll">
-      	<img src="img/icon.png"/ style="margin-left: 100px;">
+      	
+      	<div align="center">
+			<img src="img/icon.png"/ >
+		</div>
       	
         <ul class="mui-table-view">
                 <li class="mui-table-view-cell">
@@ -44,23 +56,28 @@
                   <span class="mui-tab-label">Favourite</span>
                     </a>
                 </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="html/map.html" id="openMap">
+                  <span class="mui-icon mui-icon-paperplane"></span>
+                  <span class="mui-tab-label">Cinema</span>
+                    </a>
+                </li>
             </ul>
         <a style="float: top; margin: 105px; color: white;">Ver:1.0</a>
       </div>
     </div>
   </aside>
   <!-- main contaner -->
-  <div class="mui-inner-wrap mui-transitioning">
+  <div class="mui-inner-wrap mui-transitioning" >
     <!-- mainpage title -->
     <header class="mui-bar mui-bar-nav">
       <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
       <h1 class="mui-title">Movie Fans</h1>
     </header>
-    <div class="mui-content">
-      
-        <div id="slider" class="mui-slider" style="border-radius: 20px;">
+    <div class="mui-content" >
+    	  <div class="mui-col-sm-12">
+    	   <div id="slider" class="mui-slider" style="border-radius: 20px;">
           <div class="mui-slider-group mui-slider-loop">
-            
             <div class="mui-slider-item mui-slider-item-duplicate">
               <a href="#">
                 <img src="img/ironman3.jpg">
@@ -68,12 +85,12 @@
             </div>
             <!-- first -->
             <div class="mui-slider-item" id="opendoctorstange">
-              <a href="html/Doctor Strange.html">
-                <img src="img/doctorstanger.jpg">
+              <a href="#">
+                <img src="img/doctorstanger.jpg"; id="coverDoctor">
               </a>
             </div>
             <!-- second -->
-            <div class="mui-slider-item">
+            <div class="mui-slider-item" id="openfanstasticbeasts">
               <a href="#">
                 <img src="img/stange animal.jpg">
               </a>
@@ -105,10 +122,11 @@
           </div>
         </div>
         
-        <h1 style="color: #333333; text-align:center; line-height: 20px;">Most Popular</h1>
-        
-        <div class="mui-slider">
-		        <div class="mui-slider-group mui-slider-loop">
+          <h1 style="color: #333333; text-align:center; line-height: 20px;">Most Popular</h1>
+          <p style="color: #333333; text-align:center; line-height: 20px;" id="movies"></p>
+          <img src=""; id="pic22">
+        	  	<div class="mui-slider">
+		      <div class="mui-slider-group mui-slider-loop">
 		        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
 		            <div class="mui-slider-item mui-slider-item-duplicate">
 		                <ul class="mui-table-view mui-grid-view">
@@ -152,7 +170,13 @@
 		            </div>
 		            <span class="mui-action mui-action-next mui-icon mui-icon-forward "style="color: #000000;"></span>
 		        </div>
-		    </div>
+		    </div> 	  	
+    	  </div>
+
+        	  
+        	
+        
+
         
         
       
@@ -180,12 +204,12 @@
 
     
 });
-	document.getElementById('opendoctorstange').addEventListener('tap',function(){
-
-    window.location.assign("html/Doctor Strange.html"); 
-
-    
-});
+//	document.getElementById('opendoctorstange').addEventListener('tap',function(){
+//		
+//  window.location.assign("html/Doctor Strange.html"); 
+//
+//  
+//});
 
 </script>
 </body>

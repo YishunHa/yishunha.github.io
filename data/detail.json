@@ -1,0 +1,202 @@
+{"movies":[
+  
+ 
+   {"name":"Avatar",
+   "date": "December 2009",
+   "type": "Action",
+   "actors": "Sam Worthington, Zoe Saldana, Stephen Lang, Michelle Rodriguez, Sigourney Weaver",
+   "review": "From Academy Award® winning director James Cameron comes Avatar, the story of an ex-Marine who finds himself thrust into hostilities on an alien planet filled with exotic life forms. As an Avatar, a human mind in an alien body, he finds himself torn between two worlds, in a desperate fight for his own survival and that of the indigenous people.",
+   "cover": "../img/cover/avatar.jpg",
+   "content": "../img/content/avatar.jpg",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+   
+  },
+
+  {
+   "name": "Bridge of Spies",
+   "date": "October 2015",
+   "type": "Drama",
+   "actors": "Tom Hanks, Mark Rylance, Scott Shepherd, Amy Ryan, Sebastian Koch, Alan Alda, Austin Stowell, Billy Magnussen, Eve Hewson, Jesse Plemons....",
+   "review": "A dramatic thriller set against the backdrop of a series of historic events, Bridge of Spies tells the story of James Donovan (Tom Hanks), a Brooklyn lawyer who finds himself thrust into the center of the Cold War when the CIA sends him on a near impossible mission to negotiate the release of a captured American U-2 pilot. High stakes and suspense power a story inspired by true events that capture the essence of a man who risked everything and vividly brings his personal journey to life.",
+   "cover": "../img/cover/Birdge of Spies.png",
+   "content": "../img/content/Bridge of Spies.jpg",
+   "trailer": "https://www.youtube.com/embed/mBBuzHrZBro"
+  },
+
+  {
+   "name": "Doctor Stange",
+   "date": "November 2016",
+   "type": "Action",
+   "actors": "Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, Benedict Wong, Michael Stuhlbarg, Benjamin Bratt, Scott Adkins, Mads Mikkelsen, Tilda Swinton",
+   "review": "Doctor Strange is a 2016 American superhero film featuring the Marvel Comics character of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the fourteenth film of the Marvel Cinematic Universe (MCU). The film is directed by Scott Derrickson, who wrote the film with Jon Spaihts and C. Robert Cargill, and stars Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, Benedict Wong, Michael Stuhlbarg, Benjamin Bratt, Scott Adkins, Mads Mikkelsen, and Tilda Swinton. In Doctor Strange, surgeon Stephen Strange learns the mystic arts from the Ancient One after a career-ending car accident.",
+   "cover": "../img/cover/Docor Stange.jpg",
+   "content": "../img/content/doctor strange.jpg",
+   "trailer": "https://www.youtube.com/embed/kNdM7b1Lm04"
+  },
+  
+  {
+   "name": "tb",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "name": "",
+   "date": "",
+   "type": "",
+   "actors": "",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  }
+]
+}

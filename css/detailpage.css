@@ -1,0 +1,51 @@
+		body {
+				height: 100%;
+				overflow-y: show;
+			}
+		.mui-bar {
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+        .mui-table-view-cell
+        {
+        	color: #000000;
+        }
+        .start
+        {
+        	text-align: right;
+        	padding-left: 30px;
+        	padding-top: 20px;
+        	color: #000000;
+        }
+        .mui-bar .mui-title
+        {
+        font-size: 13pt;
+        color: #F7F7F7;
+        }
+        .actors
+        {
+        	text-align: center;
+        	text-indent: 2em;
+        	word-break:break-all; 
+        line-height: 20px;
+        	padding-left:10px 
+        }
+        .review
+        {
+        	text-align: center;
+        	color: #000000;
+        	font-size: 20pt;
+        }
+        .review-content
+        {
+        	text-align: left;
+        }
+        .cover 
+        {
+         padding: 30px;
+         border-radius:40px;
+        }
+        .thumb
+        {
+        	width:350px;border-radius:10px;
+        }
