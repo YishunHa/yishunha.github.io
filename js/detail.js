@@ -1,4 +1,5 @@
 var filmlist = sessionStorage.getItem("chosenFilm");
+var $
 
 filmlist = JSON.parse(filmlist);
 
@@ -14,7 +15,7 @@ $(function (){
 
 });
 
-window.onload=function(favourite){
+window.onload=function getswitch(){
   document.getElementById("mySwitch").addEventListener("toggle",function(event){
   if(event.detail.isActive){
     console.log("你启动了开关");
@@ -23,3 +24,4 @@ window.onload=function(favourite){
   }
 })
 };
+
