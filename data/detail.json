@@ -1,18 +1,22 @@
 {"movies":[
   
  
-   {"name":"Avatar",
+   {
+   "id" : 0,
+   "name":"Avatar",
    "date": "December 2009",
    "type": "Action",
    "actors": "Sam Worthington, Zoe Saldana, Stephen Lang, Michelle Rodriguez, Sigourney Weaver",
    "review": "From Academy Award® winning director James Cameron comes Avatar, the story of an ex-Marine who finds himself thrust into hostilities on an alien planet filled with exotic life forms. As an Avatar, a human mind in an alien body, he finds himself torn between two worlds, in a desperate fight for his own survival and that of the indigenous people.",
    "cover": "../img/cover/avatar.jpg",
    "content": "../img/content/avatar.jpg",
+   "director": "James Cameron",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
    
   },
 
   {
+   "id" : 1,
    "name": "Bridge of Spies",
    "date": "October 2015",
    "type": "Drama",
@@ -20,10 +24,12 @@
    "review": "A dramatic thriller set against the backdrop of a series of historic events, Bridge of Spies tells the story of James Donovan (Tom Hanks), a Brooklyn lawyer who finds himself thrust into the center of the Cold War when the CIA sends him on a near impossible mission to negotiate the release of a captured American U-2 pilot. High stakes and suspense power a story inspired by true events that capture the essence of a man who risked everything and vividly brings his personal journey to life.",
    "cover": "../img/cover/Birdge of Spies.png",
    "content": "../img/content/Bridge of Spies.jpg",
+   "director": "Steven Spielberg",
    "trailer": "https://www.youtube.com/embed/mBBuzHrZBro"
   },
 
   {
+   "id" : 2,
    "name": "Doctor Stange",
    "date": "November 2016",
    "type": "Action",
@@ -31,21 +37,78 @@
    "review": "Doctor Strange is a 2016 American superhero film featuring the Marvel Comics character of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the fourteenth film of the Marvel Cinematic Universe (MCU). The film is directed by Scott Derrickson, who wrote the film with Jon Spaihts and C. Robert Cargill, and stars Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, Benedict Wong, Michael Stuhlbarg, Benjamin Bratt, Scott Adkins, Mads Mikkelsen, and Tilda Swinton. In Doctor Strange, surgeon Stephen Strange learns the mystic arts from the Ancient One after a career-ending car accident.",
    "cover": "../img/cover/Docor Stange.jpg",
    "content": "../img/content/doctor strange.jpg",
+   "director": "Scott Derrickson",
    "trailer": "https://www.youtube.com/embed/kNdM7b1Lm04"
+   
   },
   
   {
-   "name": "tb",
-   "date": "",
-   "type": "",
-   "actors": "",
-   "review": "",
-   "cover": "",
+   "id" :3,
+   "name": "Bad Moms",
+   "date": "August 2016",
+   "type": "Comedy",
+   "actors": "Mila Kunis, Kathryn Hahn, Kristen Bell, Christina Applegate, Jada Pinkett Smith, Annie Mumolo, Jay Hernandez",
+   "review": "Amy Mitchell (Mila Kunis) puts her family first, second, and third. But her man-child husband, high-maintenance kids and idiot boss are taking a toll. She gives and gives, and gives and gives, and then gives a little more, but it's never enough. When the alpha moms (Christina Applegate, Annie Mumolo and Jada Pinkett Smith) at her kids' school push her too far, Amy finally snaps. Good Amy becomes Bad Amy really fast - and she doesn't go alone. Teaming up with two other misfit moms (Kathryn Hahn and Kristen Bell), Amy gets a jolt of freedom that shakes up her life and might even make her a better mom. So call a sitter, put on your comfy pants, and pour yourself a double Chardonnay, because these moms are about to get bad. ",
+   "cover": "../img/cover/bad moms.jpg",
    "content": "",
+   "director": "Jon Lucas, Scott Moore",
+   "trailer": "https://www.youtube.com/embed/iKCw-kqo3cs"
+  },
+  
+  {
+   "id" :4,
+   "name": "Jack Reacher: Never Go Back",
+   "date": "October 2016",
+   "type": "Action & Adventure",
+   "actors": "Tom Cruise, Cobie Smulders",
+   "review": "Jack Reacher returns to enforce his bold brand of justice in the action-packed sequel based on Lee Child's best-selling Jack Reacher series. When Army Major Susan Turner is framed for treason, Reacher discovers she's the target of a massive government conspiracy. With help from Turner and a mysterious new ally, Reacher risks everything to take down a powerful organization that will stop at nothing to protect its secrets.",
+   "cover": "../img/cover/Jack Reacher- Never Go Back.jpg",
+   "content": "",
+   "director": "Edward Zwick",
+   "trailer": "https://www.youtube.com/embed/AUlKZcHXSPc"
+  },
+  
+  {
+   "id" :5,
+   "name": "Finding Dory",
+   "date": "July 2016",
+   "type": "Animation",
+   "actors": "Ellen DeGeneres, Albert Brooks, Ed O'Neill, Kaitlin Olson, Hayden Rolence, Ty Burrell, Diane Keaton, Eugene Levy, Sloane Murray, Idris Elba, Dominic West, Bob Peterson, Kate McKinnon, Bill Hader, Sigourney Weaver, Alexander Gould, Torbin Xan Bullock, Andrew Stanton, Katherine Ringgold, Lucia Geddes",
+   "review": "Disney Pixar welcomes back to the big screen everyone's favourite forgetful blue tang Dory, who's living happily in the reef with Nemo and Marlin. When Dory suddenly remembers that she has a family out there who may be looking for her, the trio take off on a life-changing adventure across the ocean to California's Marine Life Institute. In an effort to find her parents, Dory enlists the help of Hank, a cantankerous octopus; Bailey, a beluga whale who's convinced his biological sonar skills are on the fritz; and Destiny, a nearsighted whale shark. Navigating the complex inner workings of the MLI, Dory and her friends discover the magic within their flaws, friendships and family. (Original Title - Finding Dory)",
+   "cover": "../img/cover/Finding dory.jpg",
+   "content": "",
+   "director": "Andrew Stanton, Angus MacLane",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   },
   
   {
+   "id" :6,
+   "name": "Ben-Hur",
+   "date": "August 2016",
+   "type": "Drama",
+   "actors": "Jack Huston, Toby Kebbell, Rodrigo Santoro, Nazanin Boniadi, Ayelet Zurer, Morgan Freeman",
+   "review": "BEN-HUR is the epic story of Judah Ben-Hur (Jack Huston), a prince falsely accused of treason by his adopted brother Messala (Toby Kebbell), an officer in the Roman army.  Stripped of his title, separated from his family and the woman he loves (Nazanin Boniadi), Judah is forced into slavery.  After years at sea, Judah returns to his homeland to seek revenge, but finds redemption.  Based on Lew Wallace’s timeless novel, Ben-Hur: A Tale of the Christ.  Also starring Morgan Freeman and Rodrigo Santoro.",
+   "cover": "../img/cover/ben-hub.jpg",
+   "content": "",
+   "director": "Timur Bekmambetov",
+   "trailer": "https://www.youtube.com/embed/3BmeR9GYdDU"
+  },
+  
+  {
+   "id" :7,
+   "name": "Bad Moms",
+   "date": "August 2016",
+   "type": "Comedy",
+   "actors": "Mila Kunis, Kathryn Hahn, Kristen Bell, Christina Applegate, Jada Pinkett Smith, Annie Mumolo, Jay Hernandez",
+   "review": "",
+   "cover": "",
+   "content": "",
+   "director": "",
+   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  
+  {
+   "id" :3,
    "name": "",
    "date": "",
    "type": "",
@@ -53,10 +116,12 @@
    "review": "",
    "cover": "",
    "content": "",
+   "director": "",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   },
   
   {
+   "id" :3,
    "name": "",
    "date": "",
    "type": "",
@@ -64,10 +129,12 @@
    "review": "",
    "cover": "",
    "content": "",
+   "director": "",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   },
   
   {
+   "id" :3,
    "name": "",
    "date": "",
    "type": "",
@@ -75,10 +142,12 @@
    "review": "",
    "cover": "",
    "content": "",
+   "director": "",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   },
   
   {
+   "id" :3,
    "name": "",
    "date": "",
    "type": "",
@@ -86,10 +155,12 @@
    "review": "",
    "cover": "",
    "content": "",
+   "director": "",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   },
   
   {
+   "id" :3,
    "name": "",
    "date": "",
    "type": "",
@@ -97,10 +168,12 @@
    "review": "",
    "cover": "",
    "content": "",
+   "director": "",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   },
   
   {
+   "id" :3,
    "name": "",
    "date": "",
    "type": "",
@@ -108,10 +181,12 @@
    "review": "",
    "cover": "",
    "content": "",
+   "director": "",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   },
   
   {
+   "id" :3,
    "name": "",
    "date": "",
    "type": "",
@@ -119,10 +194,12 @@
    "review": "",
    "cover": "",
    "content": "",
+   "director": "",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   },
   
   {
+   "id" :3,
    "name": "",
    "date": "",
    "type": "",
@@ -130,10 +207,12 @@
    "review": "",
    "cover": "",
    "content": "",
+   "director": "",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   },
   
   {
+   "id" :3,
    "name": "",
    "date": "",
    "type": "",
@@ -141,10 +220,12 @@
    "review": "",
    "cover": "",
    "content": "",
+   "director": "",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   },
   
   {
+   "id" :3,
    "name": "",
    "date": "",
    "type": "",
@@ -152,50 +233,7 @@
    "review": "",
    "cover": "",
    "content": "",
-   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
-  },
-  
-  {
-   "name": "",
-   "date": "",
-   "type": "",
-   "actors": "",
-   "review": "",
-   "cover": "",
-   "content": "",
-   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
-  },
-  
-  {
-   "name": "",
-   "date": "",
-   "type": "",
-   "actors": "",
-   "review": "",
-   "cover": "",
-   "content": "",
-   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
-  },
-  
-  {
-   "name": "",
-   "date": "",
-   "type": "",
-   "actors": "",
-   "review": "",
-   "cover": "",
-   "content": "",
-   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
-  },
-  
-  {
-   "name": "",
-   "date": "",
-   "type": "",
-   "actors": "",
-   "review": "",
-   "cover": "",
-   "content": "",
+   "director": "",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   }
 ]

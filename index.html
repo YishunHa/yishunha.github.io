@@ -6,21 +6,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title></title>
-    <script src="js/mui.js"></script>
     <script src="js/jquery-3.1.1.js"></script>
     <link href="css/mui.css" rel="stylesheet"/>
     <link href="css/icon.css" rel="stylesheet"/>
-    <script type="text/javascript">
-	    mui.init();
-	    mui('.mui-scroll-wrapper').scroll({deceleration: 0.0005});
-        var slider = mui("#slider");
-        slider.slider({
-            interval: 1000
-        });
-        mui('#offCanvasSideScroll').scroll();
-        mui('#offCanvasContentScroll').scroll();
-
-    </script>
     <style>
     </style>
 </head>
@@ -129,7 +117,7 @@
 		        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
 		            <div class="mui-slider-item mui-slider-item-duplicate">
 		                <ul class="mui-table-view mui-grid-view">
-		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/ben-hub.jpg" style="border-radius: 15px;">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6" id=""><a href="#"><img class="mui-media-object" src="img/cover/ben-hub.jpg" style="border-radius: 15px;">
 		                            <div class="mui-media-body">Ben Hub</div></a></li>
 		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/bad moms.jpg" style="border-radius: 15px;">
 		                            <div class="mui-media-body">Bad Moms</div></a></li>
@@ -137,17 +125,17 @@
 		            </div>
 		            <div class="mui-slider-item">
 		                <ul class="mui-table-view mui-grid-view">
-		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/Finding dory.jpg" style="border-radius: 15px;">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6" id="openFindingDory"><a href="#"><img class="mui-media-object" src="img/cover/Finding dory.jpg" style="border-radius: 15px;">
 		                            <div class="mui-media-body">Finding Dory</div></a></li>
-		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/wardogs.jpg" style="border-radius: 15px;">
-		                            <div class="mui-media-body">War Dogs</div></a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6" id="openJackReacher"><a href="#"><img class="mui-media-object" src="img/cover/Jack Reacher- Never Go Back.jpg" style="border-radius: 15px;">
+		                            <div class="mui-media-body">Jack Reacher: Never Go Back</div></a></li>
 		                </ul>
 		            </div>
 		            <div class="mui-slider-item">
 		                <ul class="mui-table-view mui-grid-view">
-		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/ben-hub.jpg" style="border-radius: 15px;">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6" id="openbenhub"><a href="#"><img class="mui-media-object" src="img/cover/ben-hub.jpg" style="border-radius: 15px;">
 		                            <div class="mui-media-body">Ben Hub</div></a></li>
-		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/bad moms.jpg" style="border-radius: 15px;">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6" id="openbadmons"><a href="#"><img class="mui-media-object" src="img/cover/bad moms.jpg" style="border-radius: 15px;">
 		                            <div class="mui-media-body">Bad Moms</div></a></li>
 		                </ul>
 		            </div>
@@ -156,8 +144,8 @@
 		                <ul class="mui-table-view mui-grid-view">
 		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/Finding dory.jpg" style="border-radius: 15px;">
 		                            <div class="mui-media-body">Finding Dory</div></a></li>
-		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/wardogs.jpg" style="border-radius: 15px;">
-		                            <div class="mui-media-body">War Dogs</div></a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="img/cover/Jack Reacher- Never Go Back.jpg" style="border-radius: 15px;">
+		                            <div class="mui-media-body">Jack Reacher: Never Go Back</div></a></li>
 		                </ul>
 		            </div>
 		        </div>
@@ -211,7 +199,19 @@
 //});
 
 </script>
+<script src="js/mui.js"></script>
 <script src="js/jquerysession.js"></script>
 <script src="js/main.js"></script>
+    <script type="text/javascript">
+	    mui.init();
+	    mui('.mui-scroll-wrapper').scroll({deceleration: 0.0005});
+        var slider = mui("#slider");
+        slider.slider({
+            interval: 1000
+        });
+        mui('#offCanvasSideScroll').scroll();
+        mui('#offCanvasContentScroll').scroll();
+
+    </script>
 </body>
 </html>

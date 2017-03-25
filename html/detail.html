@@ -4,21 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title></title>
-    <script src="../js/mui.js"></script>
     <script src="../js/jquery-3.1.1.js"></script>
     <link href="../css/mui.css" rel="stylesheet"/>
     <link href="../css/mui.indexedlist.css" rel="stylesheet" />
     <link href="../css/icon.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="../css/detailpage.css"/>
-    <script type="text/javascript" charset="utf-8">
-      	mui.init({
-				swipeBack:true //启用右滑关闭功能
-			});
-		mui('.mui-scroll-wrapper').scroll({
-    
-	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-});
-    </script>
 <body>
 <header class="mui-bar mui-bar-nav">
     <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
@@ -27,51 +17,75 @@
 
 		<div class="mui-content">
         <div class="mui-row">
-        	<div class="mui-col-sm-6">
+        <div class="mui-col-sm-2"></div>
+        	<div class="mui-col-sm-4">
 				<h5 class="start" id="date"></h5>
 		<h6 class="start" style="font-weight: bold;" id="filmtype"></h6>
-		
-			<p style="padding-left:30px;font-weight: bold;font-size: 15pt;">Actors:</p>
-			<p class="actors" style="" id="actors"></p>
-				
+		<br />
+		<label style="float: left; color: #000000; font-size: 12pt; font-weight: bold;">Subscribe</label>
+	  <div class="mui-col-sm-2" style="padding-left: 90px;">
+	    <div class="mui-switch mui-switch-blue">
+	    <div class="mui-switch-handle"></div>
+	  </div>
+	  </div>
 			</div>
-			<div class="mui-col-sm-6">
-				<div class="mui-input-row">
-		    <label style="color: #000000;"></label>
-		    <div class="mui-switch mui-switch-blue mui-switch-mini" id="mySwitch">
-		        <div class="mui-switch-handle"></div>
-		    </div>
-		</div>
+			<div class="mui-col-sm-4">
 				<img class="cover" src=""/ id="filmcover">
 			</div>
-        </div>
-			
+		  <div class="mui-col-sm-2"></div>
+      </div>
+      
 	  <div class="mui-row">
-	   	
-
-
-			<h4 class="review">Review</h4>
 			<div class="mui-col-sm-1">
 			</div>
 		  <div class="mui-col-sm-10">
-
+           <h4 class="review">Review</h4>
 		     <p class:"review-content" id="filmcontent"></p>
 		    <div class="mui-col-sm-1">
 		    </div>
 		    
-		    <div class="mui-col-sm-12">
-		    <iframe class="thumb" id="trailer" width="350" height="200" src="" frameborder="0" allowfullscreen></iframe>
-		    <hr />
-		    <img class="thumb" src="" id="filmthumb">
-		    </div>
-
+		    <br />
 
 		  </div>
            
 	  </div>
+	  
+	  <div class="mui-row">
+		    	<div class="mui-col-sm-1"></div>
+		    	<div class="mui-col-sm-10">
+		    <iframe class="thumb" id="trailer" width="350" height="200" src="" frameborder="0" allowfullscreen></iframe>
+		    <hr />
+		    <img class="thumb" src="" id="filmthumb">
+		    	</div>
+		    	<div class="mui-col-sm-1"></div>
+		    
+	  </div>
+	  
+	  <div class="mui-row">
+	  	<div class="mui-col-sm-1"></div>
+	     <div class="mui-col-sm-5">
+		    <p class="actortitle">Actors:</p>
+			<p class="actors" id="actors"></p>
+		  </div>
+		  <div class="mui-col-sm-5">
+		    <p class="actortitle">Director:</p>
+			<p class="actors" id="Director"></p>
+		  </div>
+		 <div class="mui-col-xs-1"></div>
+	  </div>
+	  
 	 <script src="../js/jquerysession.js"></script>
      <script src="../js/detail.js"></script>
-
+     <script src="../js/mui.js"></script>
+     <script type="text/javascript" charset="utf-8">
+      	mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+		mui('.mui-scroll-wrapper').scroll({
+    
+	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+});
+    </script>
 	</body>
 
 </html>

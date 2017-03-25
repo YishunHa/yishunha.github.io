@@ -26,9 +26,15 @@
         {
         	text-align: center;
         	text-indent: 2em;
-        	word-break:break-all; 
-        line-height: 20px;
-        	padding-left:10px 
+        	word-break:break-word; 
+        line-height: 20px; 
+        }
+        .actortitle
+        {
+        	text-align: center;
+        	font-weight: bold;
+        	font-size: 15pt;
+        	
         }
         .review
         {
