@@ -4,19 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title></title>
-    <script src="../js/mui.js"></script>
+    <script src="../js/jquery-3.1.1.js"></script>
     <link href="../css/mui.css" rel="stylesheet"/>
     <link href="../css/mui.indexedlist.css" rel="stylesheet" />
     <link href="../css/icon.css" rel="stylesheet"/>
-    <script type="text/javascript" charset="utf-8">
-      	mui.init({
-				swipeBack:true //启用右滑关闭功能
-			});
-		mui('.mui-scroll-wrapper').scroll({
-    
-	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-});
-    </script>
     <style>
     	html,
 		body {
@@ -42,7 +33,7 @@
 
 	        <ul class="mui-table-view">
             <li class="mui-table-view-cell">
-                <a class="mui-navigate-right" href="Browse-Action.html" >
+                <a class="mui-navigate-right" href="#" id="openAction" >
                     Action
                 </a>
             </li>
@@ -123,6 +114,18 @@
     
 </div>
 			
+    <script src="../js/mui.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+		mui('.mui-scroll-wrapper').scroll({
+    
+	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+});
+    </script>
+    <script src="../js/jquerysession.js"></script>
+    <script src="../js/browse.js"></script>
 
 </body>
 </html>

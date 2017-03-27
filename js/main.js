@@ -80,7 +80,10 @@ $(document).ready(function(){
     $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][6]));
     window.location.assign("html/detail.html"); 
     });
-    
+    $("#openfanstasticbeasts").on("tap",function(){
+    $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][7]));
+    window.location.assign("html/detail.html"); 
+    });
 });
 
         

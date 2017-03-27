@@ -78,7 +78,7 @@
    "cover": "../img/cover/Finding dory.jpg",
    "content": "",
    "director": "Andrew Stanton, Angus MacLane",
-   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+   "trailer": "https://www.youtube.com/embed/3JNLwlcPBPI"
   },
   
   {
@@ -96,27 +96,27 @@
   
   {
    "id" :7,
-   "name": "Bad Moms",
-   "date": "August 2016",
+   "name": "Fantastic Beasts and Where to Find Them",
+   "date": "November 2016",
    "type": "Comedy",
-   "actors": "Mila Kunis, Kathryn Hahn, Kristen Bell, Christina Applegate, Jada Pinkett Smith, Annie Mumolo, Jay Hernandez",
-   "review": "",
-   "cover": "",
+   "actors": "Eddie Redmayne, Katherine Waterston, Alison Sudol, Dan Fogler, Colin Farrell, Ezra Miller, Jon Voight, Carmen Ejogo, Samantha Morton",
+   "review": "“Fantastic Beasts and Where to Find Them” opens in 1926 as Newt Scamander has just completed a global excursion to find and document an extraordinary array of magical creatures. Arriving in New York for a brief stopover, he might have come and gone without incident…were it not for a No-Maj (American for Muggle) named Jacob, a misplaced magical case, and the escape of some of Newt’s fantastic beasts, which could spell trouble for both the wizarding and No-Maj worlds.",
+   "cover": "../img/cover/fantastic beats.jpg",
    "content": "",
    "director": "",
-   "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
+   "trailer": "https://www.youtube.com/embed/Vso5o11LuGU"
   },
   
   {
-   "id" :3,
+   "id" :8,
    "name": "",
    "date": "",
-   "type": "",
+   "type": "Action & Adventure",
    "actors": "",
    "review": "",
    "cover": "",
    "content": "",
-   "director": "",
+   "director": "David Yates",
    "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY"
   },
   

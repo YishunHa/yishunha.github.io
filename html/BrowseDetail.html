@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+
+    <link href="../css/mui.css" rel="stylesheet"/>
+    <link href="../css/mui.indexedlist.css" rel="stylesheet" />
+    <link href="../css/icon.css" rel="stylesheet"/>
+    <style>
+    	html,
+		body {
+				height: 100%;
+				overflow-y: show;
+			}
+		.mui-bar {
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+        .mui-table-view-cell
+        {
+        	color: #000000;
+        }
+		</style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title" id="browsetitle"></h1>
+</header>
+<div class="mui-content">
+    <ul class="mui-table-view mui-grid-view">
+        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="#">
+                <img class="mui-media-object" src="" style="border-radius: 15px;" id="firstcover">
+                <div class="mui-media-body" id="firstname"></div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="#">
+                <img class="mui-media-object" src="" style="border-radius: 15px;" id="secondcover">
+                <div class="mui-media-body" id="secondname"></div>
+            </a>
+        </li>
+    </ul>
+    <ul class="mui-table-view mui-grid-view">
+        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="#">
+                <img class="mui-media-object" src="" style="border-radius: 15px;" id="thirdcover">
+                <div class="mui-media-body" id="thirdname"></div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+            <a href="#">
+                <img class="mui-media-object" src="" style="border-radius: 15px;" id="fourthcover">
+                <div class="mui-media-body" id="fourthname"></div>
+            </a>
+        </li>
+    </ul>
+    
+	       
+	
+    
+</div>
+    <script src="../js/mui.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+		mui('.mui-scroll-wrapper').scroll({
+    
+	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+});
+    </script>
+        <script src="../js/jquery-3.1.1.js"></script>
+        <script src="../js/jquerysession.js"></script>
+        <script src="../js/browsedetail.js"></script>
+
+</body>
+</html>

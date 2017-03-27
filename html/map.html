@@ -12,6 +12,7 @@
 		body {
 				height: 100%;
 				overflow-y: show;
+				color: #000000;
 			}
 		.mui-bar {
 				-webkit-box-shadow: none;
@@ -26,11 +27,18 @@
 <body>
 <header class="mui-bar mui-bar-nav">
     <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-    <h1 class="mui-title">Favourite</h1>
+    <h1 class="mui-title">Map</h1>
 </header>
+<div class="mui-progressbar " style="padding-top: 3px;" id="shows">
+    	<span></span>
+    </div>
 <div class="mui-content">
     <div class="mui-row">
-        <div id="map" style="width:600px; height:400px;"></div>
+    	  <div class="mui-col-sm-12">
+    	  	<h1 style="text-align: center; font-family: 'lucida console';">Here are Cinema round you</h1>
+       <div id="map" style="width:430px; height:500px;"></div>
+    	  </div>
+
     </div>
 	       
 	
@@ -38,10 +46,6 @@
 </div>
 			
     <script src="../js/mui.js"></script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA58auOqF6wOraSfv_yWc2EAvHx4s_3PY&callback=getUserPosition">
-    </script>
-    <script type="text/javascript" src="../js/location.js"></script>
     <script type="text/javascript" charset="utf-8">
       	mui.init({
 				swipeBack:true //启用右滑关闭功能
@@ -50,6 +54,11 @@
     
 	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
 });
+       mui("#shows").progressbar().setProgress(15);
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA58auOqF6wOraSfv_yWc2EAvHx4s_3PY&libraries=places&callback" async>
+    </script>
+    <script type="text/javascript" src="../js/location.js"></script>
+ 
 </body>
 </html>
