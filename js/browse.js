@@ -18,7 +18,13 @@ var selectfilm;
 $(document).ready(function(){
     $("#openAction").on("tap",function(){
     //selectfilm = JSON.stringify(filmlist["movies"][2]["id"]);
-    $.session.set('chosenFilm', JSON.stringify(filmlist["movies"]));
+    $.session.set('chosenFilm2', JSON.stringify(filmlist["movies"]));
+    $.session.set('browsekind', "Action");
+    window.location.assign("BrowseDetail.html"); 
+   });
+    $("#openAction").click(function(){
+    //selectfilm = JSON.stringify(filmlist["movies"][2]["id"]);
+    $.session.set('chosenFilm2', JSON.stringify(filmlist["movies"]));
     $.session.set('browsekind', "Action");
     window.location.assign("BrowseDetail.html"); 
    });

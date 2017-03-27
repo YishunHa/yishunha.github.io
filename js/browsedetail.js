@@ -1,4 +1,4 @@
-var filmlist = sessionStorage.getItem("chosenFilm");
+var filmlist = sessionStorage.getItem("chosenFilm2");
 var browsetitle = sessionStorage.getItem("browsekind");
 var chosenfilm;
 
@@ -23,7 +23,17 @@ $(document).ready(function(){
     $.session.set('chosenFilm', JSON.stringify(filmlist[0]));
     window.location.assign("detail.html"); 
    });
+    $("#firstcover").click(function(){
+    //selectfilm = JSON.stringify(filmlist["movies"][2]["id"]);
+    $.session.set('chosenFilm', JSON.stringify(filmlist[0]));
+    window.location.assign("detail.html"); 
+   });
     $("#secondcover").on("tap",function(){
+    //selectfilm = JSON.stringify(filmlist["movies"][2]["id"]);
+    $.session.set('chosenFilm', JSON.stringify(filmlist[2]));
+    window.location.assign("detail.html"); 
+   });
+    $("#secondcover").click(function(){
     //selectfilm = JSON.stringify(filmlist["movies"][2]["id"]);
     $.session.set('chosenFilm', JSON.stringify(filmlist[2]));
     window.location.assign("detail.html"); 
@@ -33,18 +43,10 @@ $(document).ready(function(){
     $.session.set('chosenFilm', JSON.stringify(filmlist[4]));
     window.location.assign("detail.html"); 
    });
-    $("#openbadmons").on("tap",function(){
+    $("#thirdcover").click(function(){
     //selectfilm = JSON.stringify(filmlist["movies"][2]["id"]);
-    $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][3]));
-    window.location.assign("html/detail.html"); 
+    $.session.set('chosenFilm', JSON.stringify(filmlist[4]));
+    window.location.assign("detail.html"); 
    });
-    $("#openbenhub").on("tap",function(){
-    $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][6]));
-    window.location.assign("html/detail.html"); 
-    });
-    $("#openfanstasticbeasts").on("tap",function(){
-    $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][7]));
-    window.location.assign("html/detail.html"); 
-    });
 });
 
