@@ -3,9 +3,9 @@ var infowindow;
 var latitude;
 var longitude;
 
-navigator.geolocation.getCurrentPosition(itWorks);
+navigator.geolocation.getCurrentPosition(getpostition);
 
-function itWorks(position) 
+function getpostition(position) 
 	{   
 		latitude = position.coords.latitude;
 		mui("#shows").progressbar().setProgress(30);
