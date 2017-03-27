@@ -35,7 +35,7 @@ function initMap() {
   var service = new google.maps.places.PlacesService(map);
   service.nearbySearch({
     location: pyrmont,
-    radius: 10000,
+    radius: 200000,
     types: ['movie_theater']
   }, callback);
   
