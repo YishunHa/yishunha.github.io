@@ -3,7 +3,12 @@ var infowindow;
 var latitude;
 var longitude;
 
-navigator.geolocation.getCurrentPosition(getpostition);
+navigator.geolocation.getCurrentPosition(getpostition, doesntwork);
+
+function doesntwork(){
+	alert("Please give location permission!!");
+	console.log('There is an error when try to get the location!')
+}
 
 function getpostition(position) 
 	{   
@@ -13,8 +18,8 @@ function getpostition(position)
 		mui("#shows").progressbar().setProgress(45);
 //		sessionStorage.setItem("latitude", "hekki");
 //		sessionStorage.setItem("longitude", "heiii");
-     	console.log('latitude: '+latitude);
-     	console.log('longitude: '+longitude);
+        console.log('Get current Location sucessful');
+     	console.log('your loacation:'+'latitude: '+latitude +'  longitude: '+longitude);
         initMap();
     }
 
