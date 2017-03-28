@@ -283,4 +283,12 @@ $(document).ready(function(){
     $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][29]));
     window.location.assign("detail.html"); 
     });
+    $("#openIronMan3").on("tap",function(){
+    $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][32]));
+    window.location.assign("detail.html"); 
+    });
+    $("#openIronMan3").click(function(){
+    $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][32]));
+    window.location.assign("detail.html"); 
+    });
 });

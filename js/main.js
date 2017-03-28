@@ -84,6 +84,14 @@ $(document).ready(function(){
     $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][7]));
     window.location.assign("html/detail.html"); 
     });
+    $("#openTransformersAgeofExtinction").on("tap",function(){
+    $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][8]));
+    window.location.assign("html/detail.html"); 
+    });
+    $("#openIronMan3").on("tap",function(){
+    $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][32]));
+    window.location.assign("html/detail.html"); 
+    });
 });
 
         

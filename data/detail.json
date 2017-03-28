@@ -405,16 +405,16 @@
    "trailer": "https://www.youtube.com/embed/tV_IhWE4LP0"
   },
   {
-   "id" :27,
-   "name": "",
-   "date": "",
-   "type": "Romance",
-   "actors": "",
-   "review": "",
-   "cover": "../img/cover/The Light Between Oceans.jpg",
+   "id" :32,
+   "name": "Iron Man 3",
+   "date": "May 2013",
+   "type": "Action & Adventure",
+   "actors": "Robert Downey, Gwyneth Paltrow, Don Cheadle, Guy Pearce, Rebecca Hall, Stephanie Szostak, James Badge Dale",
+   "review": "The studio that brought you Marvel's The Avengers unleashes the best Iron Man adventure yet with this must-own, global phenomenon starring Robert Downey Jr. and Gwyneth Paltrow. When Tony Stark/Iron Man finds his entire world reduced to rubble, he must use all his ingenuity to survive, destroy his enemy and somehow protect those he loves. But a soul-searching question haunts him: Does the man make the suit... or does the suit make the man? (Original Title - Iron Man 3) © 2013 Walt Disney Pictures",
+   "cover": "../img/cover/Iron Man 3.jpg",
    "content": "",
-   "director": "",
-   "trailer": "https://www.youtube.com/embed/lk7yw00a4fs"
+   "director": "Shane Black",
+   "trailer": "https://www.youtube.com/embed/Ke1Y3P9D0Bc"
   },
   {
    "id" :27,
