@@ -93,8 +93,23 @@ $(document).ready(function(){
     window.location.assign("html/detail.html"); 
     });
     
+    $(function (){
+    	if (localStorage.getItem('favourite') != null){
     var favouritefilm = JSON.parse(localStorage.getItem('favourite'));
     $("#favouritelist").html(favouritefilm.length);
+    	 
+		
+	}
+    
+    else { 
+    	$("#favouritelist").html("0");
+	console.log("you don't have anything in your favourite list");
+   
+    }
+    	
+    });
+    
+    
     
 });
 
