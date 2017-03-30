@@ -2,6 +2,7 @@ var map;
 var infowindow;
 var latitude;
 var longitude;
+var cinema =0;
 
 navigator.geolocation.getCurrentPosition(getpostition, doesntwork);
 
@@ -40,9 +41,11 @@ function initMap() {
   var service = new google.maps.places.PlacesService(map);
   service.nearbySearch({
     location: pyrmont,
-    radius: 30000,
+    radius: 5000,
     types: ['movie_theater']
   }, callback);
+   
+  
   
 
 }
@@ -62,11 +65,13 @@ function callback(results, status) {
   if (status === google.maps.places.PlacesServiceStatus.OK) {
     for (var i = 0; i < results.length; i++) {
       createMarker(results[i]);
+      cinema = cinema + 1;
     }
   }
     mui("#shows").progressbar().setProgress(100);
-
+    cinemas();
 }
+
 
 function createMarker(place) {
   var placeLoc = place.geometry.location;
@@ -80,6 +85,15 @@ function createMarker(place) {
     infowindow.setContent(place.name);
     infowindow.open(map, this);
   });
-
+  
 }
+
+
+
+ function cinemas(){
+	console.log("There are "+ "cinema" +" cinema around you.");
+	$("#cinematotal").html("There are " + cinema +" cinemas in total around you")
+	
+	
+};
 
