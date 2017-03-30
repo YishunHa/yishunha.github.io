@@ -92,6 +92,10 @@ $(document).ready(function(){
     $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][32]));
     window.location.assign("html/detail.html"); 
     });
+    
+    var favouritefilm = JSON.parse(localStorage.getItem('favourite'));
+    $("#favouritelist").html(favouritefilm.length);
+    
 });
 
         

@@ -389,7 +389,8 @@ $(document).ready(function(){
     $.session.set('chosenFilm', JSON.stringify(filmlist[29]));
     window.location.assign("detail.html"); 
    });
-     case "10":
+     break;
+     case "11":
     $("#firstcover").on("tap",function(){
     $.session.set('chosenFilm', JSON.stringify(filmlist[30]));
     window.location.assign("detail.html"); 

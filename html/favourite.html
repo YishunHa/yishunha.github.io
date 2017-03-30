@@ -4,19 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title></title>
-    <script src="../js/mui.js"></script>
     <link href="../css/mui.css" rel="stylesheet"/>
     <link href="../css/mui.indexedlist.css" rel="stylesheet" />
     <link href="../css/icon.css" rel="stylesheet"/>
-    <script type="text/javascript" charset="utf-8">
-      	mui.init({
-				swipeBack:true //启用右滑关闭功能
-			});
-		mui('.mui-scroll-wrapper').scroll({
-    
-	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-});
-    </script>
+
     <style>
     	html,
 		body {
@@ -39,23 +30,107 @@
     <h1 class="mui-title">Favourite</h1>
 </header>
 <div class="mui-content">
-      
+       <h1 style="text-align: center; color: #000000; padding-top: 50px;" id="alert">Your don't have any favourite films</h1>
         <ul class="mui-table-view mui-table-view-chevron">
-				<li class="mui-table-view-cell mui-media">
-					<a class="mui-navigate-right" href="Bridge of Spies.html">
-						<img class="mui-media-object mui-pull-left" src="../img/cover/Birdge of Spies.png" style="border-radius: 5px;">
-						<div class="mui-media-body" >
-							Bridge of Spies
-							<p class='mui-ellipsis'>  A dramatic thriller set against the backdrop of a series of historic events, Bridge of Spies tells the story of James Donovan (Tom Hanks), a Brooklyn lawyer who finds himself thrust into the center of the Cold War when the CIA..</p>
+				<li class="mui-table-view-cell mui-media" id="one">
+					<a class="mui-navigate-right" href="detail.html" id="openfirst">
+						<img class="mui-media-object mui-pull-left" src="" style="border-radius: 5px;" id="firstcover">
+						<div class="mui-media-body" id="firstname">
+							
+							<p class='mui-ellipsis' id="firstcontent"></p>
 						</div>
 					</a>
 				</li>
-				<li class="mui-table-view-cell mui-media">
-					<a class='mui-navigate-right' href="Doctor Strange.html">
-						<img class="mui-media-object mui-pull-left" src="../img/cover/Docor Stange.jpg" style="border-radius: 5px;">
-						<div class="mui-media-body">
-							Doctor Strange
-							<p class='mui-ellipsis'>Doctor Strange is a 2016 American superhero film featuring the Marvel Comics character of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures.</p>
+				<li class="mui-table-view-cell mui-media" id="two">
+					<a class='mui-navigate-right' href="detail.html" id="opensecond">
+						<img class="mui-media-object mui-pull-left" src="" style="border-radius: 5px;" id="secondcover">
+						<div class="mui-media-body" id="secondname">
+							
+							<p class='mui-ellipsis' id="secondcontent"></p>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+        <ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media" id="three">
+					<a class="mui-navigate-right" href="#" id="openthird">
+						<img class="mui-media-object mui-pull-left" src="" style="border-radius: 5px;" id="thirdcover">
+						<div class="mui-media-body" id="thirdname">
+							
+							<p class='mui-ellipsis' id="thirdcontent"></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" id="fourth">
+					<a class='mui-navigate-right' href="#" id="openfourth">
+						<img class="mui-media-object mui-pull-left" src="" style="border-radius: 5px;" id="fourthcover">
+						<div class="mui-media-body" id="fourthname">
+							
+							<p class='mui-ellipsis' id="fourthcontent"></p>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+        <ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media" id="five">
+					<a class="mui-navigate-right" href="#" id="openfifth">
+						<img class="mui-media-object mui-pull-left" src="" style="border-radius: 5px;" id="fifthcover">
+						<div class="mui-media-body" id="fifthname">
+							
+							<p class='mui-ellipsis' id="fifthcontent"></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" id="six">
+					<a class='mui-navigate-right' href="#" id="opensixth">
+						<img class="mui-media-object mui-pull-left" src="" style="border-radius: 5px;" id="sixth">
+						<div class="mui-media-body" id="sixthname">
+							
+							<p class='mui-ellipsis' id="sixthcontent"></p>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+        <ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media" id="seven">
+					<a class="mui-navigate-right" href="#" id="openseventh">
+						<img class="mui-media-object mui-pull-left" src="" style="border-radius: 5px;" id="senventhcover">
+						<div class="mui-media-body" id="seventhname">
+							
+							<p class='mui-ellipsis' id="sevencontent"></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" id="eight">
+					<a class='mui-navigate-right' href="#" id="openeighth">
+						<img class="mui-media-object mui-pull-left" src="" style="border-radius: 5px;" id="eighthcover">
+						<div class="mui-media-body" id="eighthtitle">
+							
+							<p class='mui-ellipsis' id="eighthcontent"></p>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+        <ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media" id="nine">
+					<a class="mui-navigate-right" href="#" id="openninth">
+						<img class="mui-media-object mui-pull-left" src="" style="border-radius: 5px;" id="ninthcover">
+						<div class="mui-media-body" id="ninthtitle">
+							
+							<p class='mui-ellipsis' id="ninthcontent"></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" id="ten">
+					<a class='mui-navigate-right' href="#" id="opententh">
+						<img class="mui-media-object mui-pull-left" src="" style="border-radius: 5px;" id="tenthcover">
+						<div class="mui-media-body" id="tenthtitle">
+							
+							<p class='mui-ellipsis' id="tenthcontent"></p>
 						</div>
 					</a>
 				</li>
@@ -66,7 +141,20 @@
       
       
     </div>  
-			
-
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/jquerysession.js"></script>
+	<script src="../js/mui.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+		mui('.mui-scroll-wrapper').scroll({
+    
+	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+});
+   
+   $("#alert").hide();
+    </script>
+    <script src="../js/favourite.js"></script>
 </body>
 </html>
