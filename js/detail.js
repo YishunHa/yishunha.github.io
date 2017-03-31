@@ -18,7 +18,7 @@ $(function layoutdata(){
 
 checkstatus();
 
-function checkstatus(){
+function checkstatus(){ //check whether the film has been subscribed by the user before
 	if (localStorage.getItem('favourite') == null){
 		myswitch();
 	}
@@ -37,23 +37,10 @@ function checkstatus(){
 
 function myswitch(){
     var cart = filmID;
+    var favouritelimit = JSON.parse(localStorage.getItem('favourite'));
   	var filmcart = {
     id: cart
   	};
-  	  	//pass the filmid value to cart
-  	
-//	$(function (){
-//	favouritefilm = JSON.parse(localStorage.getItem('favourite'))
-//	for (var i = 0; i < favouritefilm;i++){
-//	  if (filmID === JSON.parse(favouritefilm[i])){
-//	  	$("#mySwithShows").attr("class","mui-switch mui-switch-blue mui-active")
-//	  }
-//	  else {
-//	  	("#mySwithShows").attr("class","mui-switch mui-switch-blue mui-active")
-//	  	Console.log("hello")
-//	  }
-//	};
-//})
   document.getElementById("mySwitch").addEventListener("toggle",function(){ 	
 
   if(event.detail.isActive){
@@ -68,15 +55,11 @@ function myswitch(){
   	console.log("you had add the film to the favour");
     };
     //check whether the favourte list is more than 16
-   if(localStorage.getItem('favourite') == null){ // in case the first didn't exist
+   if( favouritelimit.length > 16){ 
 
-  	//init array
-  	var filmcarts = [];
-  	//add to array
-  	filmcarts.push(filmcart);
-  	//save to local storage
-  	localStorage.setItem('favourite',JSON.stringify(filmcarts));
-  	console.log("you had add the film to the favour");
+  	$("#mySwitch").hide();
+  	$("#subs").text("Subscrition films are out of limits");
+  	alert("your favourite list is out of limit");
   	}
   
   	else {

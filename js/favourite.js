@@ -2,9 +2,27 @@
 var filmlist = [];
 var favouriteID;
 var amount;
+ 
+getjson();
 
-$(function nofavourite(){
-		if (localStorage.getItem('favourite') == null){
+function getjson() {
+	mui.ajax('../data/detail.json',{
+	data:{},
+	dataType:'json',
+	// true off the asyc to prevent the following function run before get the data from the database
+	async:false,
+	type:'get',//HTTP request type
+	success:function(data){
+		filmlist = data
+		}
+});
+	checkfavourite();
+};
+    
+
+
+function checkfavourite(){
+     	if (localStorage.getItem('favourite') == null){
 		$("#alert").show();
 		$("#one").hide();
 		$("#two").hide();
@@ -46,23 +64,42 @@ $(function nofavourite(){
 	}
 	else
 	{
-		console.log("success")
+		favouriteID = JSON.parse(localStorage.getItem('favourite'));
+		amount = favouriteID.length;
+		havefavourite();
+		console.log("success");
+		
 		
 	}
 	
 	
-});
+};
 
-$.getJSON("../data/detail.json", function(json){
-     filmlist = json;
-     });
-     
-$(function havefavourite(){
-    favouriteID = JSON.parse(localStorage.getItem('favourite'));
-    amount = favouriteID.length;
+
     
-    if (amount <= 6){
-    	  switch (amount){
+
+
+function havefavourite(){
+	if (amount <= 4){
+		onetofour();
+	};
+	if (amount >= 5 & amount <7){
+		fivetosix();
+	};
+	if (amount >= 7 & amount <11){
+		seventoten()
+	};
+	if (amount >10 & amount <=13){
+		eleventothirdteen();
+	};
+	if (amount >13 & amount <=16){
+		fourteentosixteen();
+	};
+};
+
+
+function onetofour(){
+	switch (amount){
     	case 1:
     	    var a = favouriteID[0].id;
            $("#firstname").html(filmlist["movies"][a].name)
@@ -231,7 +268,11 @@ $(function havefavourite(){
         $("#fifteen").hide();
         $("#sixteen").hide();
     		break;
-    		
+    	 };
+};
+
+function fivetosix(){
+	switch (amount){
     	case 5:
     	 var a = favouriteID[0].id;
     	  var b = favouriteID[1].id;
@@ -379,10 +420,10 @@ $(function havefavourite(){
         $("#sixteen").hide();
     		break;
     	  };
-    };
-    
-    if (amount <= 10 & amount >6) {
-    	      switch(amount)  {
+};
+
+function seventoten() {
+	 switch(amount)  {
     	   case 7:
     		 var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
@@ -798,10 +839,10 @@ $(function havefavourite(){
        $("#sixteen").hide();
     		break;
     	  };
-    };
-    
-    		if (amount <= 13 & amount >10) {
-    	      switch(amount)  {
+};
+
+function eleventothirdteen() {
+       switch(amount)  {
     	      case 11:
     		 var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
@@ -1217,9 +1258,10 @@ $(function havefavourite(){
        $("#sixteen").hide();
     		break;
     		 };
-    	 };
-    		
-    		if (amount <= 16 & amount >13) {
+};
+
+
+function fourteentosixteen(){
     	      switch(amount)  {
     		case 14:
     		var a = favouriteID[0].id;
@@ -1727,10 +1769,9 @@ $(function havefavourite(){
        });
     		break;
       };
-    };
 	
 	
-});
+};
 
 
 

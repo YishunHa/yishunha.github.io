@@ -3,6 +3,7 @@ var infowindow;
 var latitude;
 var longitude;
 var cinema =0;
+var result;
 
 navigator.geolocation.getCurrentPosition(getpostition, doesntwork);
 
@@ -66,6 +67,9 @@ function callback(results, status) {
     for (var i = 0; i < results.length; i++) {
       createMarker(results[i]);
       cinema = cinema + 1;
+      result = results[i];
+      console.log(results);
+      $("<p style='color: #000000; text-align: left' id='cinematotal'>Name: "+ result.name + " "+" " + " "+ "Rating:" + result.rating + "</br>" +"Address:" + " " + result.vicinity +"</p>").insertAfter("#cinematotal");
     }
   }
     mui("#shows").progressbar().setProgress(100);
@@ -92,7 +96,7 @@ function createMarker(place) {
 
  function cinemas(){
 	console.log("There are "+ "cinema" +" cinema around you.");
-	$("#cinematotal").html("There are " + cinema +" cinemas in total around you")
+	$("#cinematotal").html("There are " + cinema +" cinemas in total around you:")
 	
 	
 };

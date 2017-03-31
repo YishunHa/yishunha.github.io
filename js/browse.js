@@ -5,17 +5,15 @@ var filmlist = [];
 var store;
 
 
-//$(function (){
 	
 
-	$.getJSON("../data/detail.json", function(json){
-//   $movies.append('<img' + ' ' + 'src="' + json.movies[].cover  + '" >')
-//   alert("JSON Data: " + json.movies[0].name);
+$.getJSON("../data/detail.json", function(json){
+
      filmlist = json;
      });
 
 
-$(document).ready(function(){
+$(document).ready(function(){  //page navagation
     $("#openAction").on("tap",function(){
     store = 0;
     $.session.set('chosenFilm2', JSON.stringify(filmlist["movies"]));

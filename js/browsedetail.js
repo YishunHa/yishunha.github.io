@@ -5,7 +5,7 @@ var chosenkind = sessionStorage.getItem("chosenkind");
 
 filmlist = JSON.parse(filmlist);
 
-$(function(){
+$(function layoutsetion(){
 	switch(chosenkind) {
     case "0":
            $("#browsetitle").html(browsetitle)
@@ -26,6 +26,8 @@ $(function(){
            $("#secondname").html(filmlist[8]["name"])
            $("#firstcover").attr("src",filmlist[5]["cover"])
            $("#secondcover").attr("src",filmlist[8]["cover"])
+           $("#secondrow").hide()
+           $("#thirdrow").hide()
 
         break;
     case "2":
@@ -38,6 +40,7 @@ $(function(){
            $("#secondcover").attr("src",filmlist[10]["cover"])
            $("#thirdcover").attr("src",filmlist[11]["cover"])
            $("#fourthcover").attr("src",filmlist[12]["cover"])
+           $("#thirdrow").hide()
         break;
     case "3":
            $("#browsetitle").html(browsetitle)
@@ -47,6 +50,7 @@ $(function(){
            $("#firstcover").attr("src",filmlist[3]["cover"])
            $("#secondcover").attr("src",filmlist[7]["cover"])
            $("#thirdcover").attr("src",filmlist[14]["cover"])
+           $("#thirdrow").hide()
         break;
      case "4":
            $("#browsetitle").html(browsetitle)
@@ -54,6 +58,8 @@ $(function(){
            $("#secondname").html(filmlist[6]["name"])
            $("#firstcover").attr("src",filmlist[1]["cover"])
            $("#secondcover").attr("src",filmlist[6]["cover"])
+           $("#secondrow").hide()
+           $("#thirdrow").hide()
 
         break;
      case "5":
@@ -64,6 +70,7 @@ $(function(){
            $("#firstcover").attr("src",filmlist[15]["cover"])
            $("#secondcover").attr("src",filmlist[16]["cover"])
            $("#thirdcover").attr("src",filmlist[17]["cover"])
+           $("#thirdrow").hide()
         break;
       case "6":
            $("#browsetitle").html(browsetitle)
@@ -71,6 +78,8 @@ $(function(){
            $("#secondname").html(filmlist[19]["name"])
            $("#firstcover").attr("src",filmlist[18]["cover"])
            $("#secondcover").attr("src",filmlist[19]["cover"])
+           $("#secondrow").hide()
+           $("#thirdrow").hide()
         break;
        case "7":
            $("#browsetitle").html(browsetitle)
@@ -78,6 +87,8 @@ $(function(){
            $("#secondname").html(filmlist[21]["name"])
            $("#firstcover").attr("src",filmlist[20]["cover"])
            $("#secondcover").attr("src",filmlist[21]["cover"])
+           $("#secondrow").hide()
+           $("#thirdrow").hide()
         break;
         case "8":
            $("#browsetitle").html(browsetitle)
@@ -87,6 +98,7 @@ $(function(){
            $("#firstcover").attr("src",filmlist[22]["cover"])
            $("#secondcover").attr("src",filmlist[23]["cover"])
            $("#thirdcover").attr("src",filmlist[24]["cover"])
+           $("#thirdrow").hide()
         break;
         case "9":
            $("#browsetitle").html(browsetitle)
@@ -96,6 +108,7 @@ $(function(){
            $("#firstcover").attr("src",filmlist[25]["cover"])
            $("#secondcover").attr("src",filmlist[26]["cover"])
            $("#thirdcover").attr("src",filmlist[27]["cover"])
+           $("#thirdrow").hide()
         break;
        case "10":
            $("#browsetitle").html(browsetitle)
@@ -103,11 +116,15 @@ $(function(){
            $("#secondname").html(filmlist[29]["name"])
            $("#firstcover").attr("src",filmlist[28]["cover"])
            $("#secondcover").attr("src",filmlist[29]["cover"])
+           $("#secondrow").hide()
+           $("#thirdrow").hide()
         break;
        case "11":
            $("#browsetitle").html(browsetitle)
            $("#firstname").html(filmlist[30]["name"])
            $("#firstcover").attr("src",filmlist[30]["cover"])
+           $("#secondrow").hide()
+           $("#thirdrow").hide()
         break;
 }
 	
