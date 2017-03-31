@@ -52,8 +52,8 @@ function myswitch(){
   	filmcarts.push(filmcart);
   	//save to local storage
   	localStorage.setItem('favourite',JSON.stringify(filmcarts));
-  	favouritelimit = JSON.parse(localStorage.getItem('favourite'));
-  	mui.toast('Success! Now you have subcribe'+ ' ' + favouritelimit.length +' '+ 'films.');
+  	//favouritelimit = JSON.parse(localStorage.getItem('favourite'));
+  	//mui.toast('Success! Now you have subcribe'+ ' ' + favouritelimit.length +' '+ 'films.');
   	console.log("you had add the film to the favour");
     };
     //check whether the favourte list is more than 16
@@ -73,8 +73,8 @@ function myswitch(){
      //save to the local storage
      localStorage.setItem('favourite',JSON.stringify(filmcarts));
     //alert the user
-    favouritelimit = JSON.parse(localStorage.getItem('favourite'));
-    mui.toast('Subscribe success! Now you have subcribe'+ ' ' + favouritelimit.length +' '+'films.');
+   // favouritelimit = JSON.parse(localStorage.getItem('favourite'));
+    //mui.toast('Subscribe success! Now you have subcribe'+ ' ' + favouritelimit.length +' '+'films.');
   	}
   	
   
@@ -95,8 +95,8 @@ function myswitch(){
     console.log("you remove the film from favourite");
 
   };
-      favouritelimit = JSON.parse(localStorage.getItem('favourite'));
-      mui.toast('Success! Now you have subcribed'+ ' ' + favouritelimit.length +' '+ 'films.');
+  //    favouritelimit = JSON.parse(localStorage.getItem('favourite'));
+  //    mui.toast('Success! Now you have subcribed'+ ' ' + favouritelimit.length +' '+ 'films.');
 }
 });
 };
