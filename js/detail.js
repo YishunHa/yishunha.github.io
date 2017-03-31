@@ -61,9 +61,7 @@ function myswitch(){
 
   	$("#mySwitch").hide();
   	$("#subs").text("Subscrition films are out of limits");
-  	mui.alert('Opps, looks like you had subscribed to much films','Error','btnValue',function (e) {
-  	   e.index
-  	},'div');
+
   	//alert("your favourite list is out of limit");
   	}
   
