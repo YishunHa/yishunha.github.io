@@ -3,7 +3,7 @@ var filmlist = [];
 var favouriteID;
 var amount;
 
-$(function (){
+$(function nofavourite(){
 		if (localStorage.getItem('favourite') == null){
 		$("#alert").show();
 		$("#one").hide();
@@ -57,11 +57,12 @@ $.getJSON("../data/detail.json", function(json){
      filmlist = json;
      });
      
-$(function(){
+$(function havefavourite(){
     favouriteID = JSON.parse(localStorage.getItem('favourite'));
     amount = favouriteID.length;
     
-    switch (amount){
+    if (amount <= 6){
+    	  switch (amount){
     	case 1:
     	    var a = favouriteID[0].id;
            $("#firstname").html(filmlist["movies"][a].name)
@@ -179,7 +180,7 @@ $(function(){
     	  var d = favouriteID[3].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#firstcover").attr("src",filmlist["movies"][a].cover)
            $("#secondcover").attr("src",filmlist["movies"][b].cover)
@@ -239,7 +240,7 @@ $(function(){
     	  var e = favouriteID[4].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#firstcover").attr("src",filmlist["movies"][a].cover)
@@ -308,7 +309,7 @@ $(function(){
     	     var f = favouriteID[5].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#sixthname").html(filmlist["movies"][f].name)
@@ -377,7 +378,12 @@ $(function(){
         $("#fifteen").hide();
         $("#sixteen").hide();
     		break;
-    		case 7:
+    	  };
+    };
+    
+    if (amount <= 10 & amount >6) {
+    	      switch(amount)  {
+    	   case 7:
     		 var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
     	     var c = favouriteID[2].id;
@@ -387,7 +393,7 @@ $(function(){
     	     var g = favouriteID[6].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#sixthname").html(filmlist["movies"][f].name)
@@ -476,7 +482,7 @@ $(function(){
     	     var h = favouriteID[7].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#sixthname").html(filmlist["movies"][f].name)
@@ -563,7 +569,7 @@ $(function(){
         $("#fifteen").hide();
         $("#sixteen").hide();
     		break;
-    		case 9:
+    	   case 9:
     		var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
     	     var c = favouriteID[2].id;
@@ -575,7 +581,7 @@ $(function(){
     	     var i = favouriteID[8].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#sixthname").html(filmlist["movies"][f].name)
@@ -685,7 +691,7 @@ $(function(){
     	     var j = favouriteID[9].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#sixthname").html(filmlist["movies"][f].name)
@@ -791,9 +797,13 @@ $(function(){
        $("#fifteen").hide();
        $("#sixteen").hide();
     		break;
-    		
-    		case 11:
-    		var a = favouriteID[0].id;
+    	  };
+    };
+    
+    		if (amount <= 13 & amount >10) {
+    	      switch(amount)  {
+    	      case 11:
+    		 var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
     	     var c = favouriteID[2].id;
     	     var d = favouriteID[3].id;
@@ -806,7 +816,7 @@ $(function(){
     	     var k = favouriteID[10].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#sixthname").html(filmlist["movies"][f].name)
@@ -935,7 +945,7 @@ $(function(){
     	     var l = favouriteID[11].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#sixthname").html(filmlist["movies"][f].name)
@@ -1074,7 +1084,7 @@ $(function(){
     	     var m = favouriteID[12].id; 
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#sixthname").html(filmlist["movies"][f].name)
@@ -1202,10 +1212,15 @@ $(function(){
        $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][m]));
        window.location.assign("detail.html"); 
        });
-    		break;
        $("#fourteen").hide();
        $("#fifteen").hide();
        $("#sixteen").hide();
+    		break;
+    		 };
+    	 };
+    		
+    		if (amount <= 16 & amount >13) {
+    	      switch(amount)  {
     		case 14:
     		var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
@@ -1223,7 +1238,7 @@ $(function(){
     	     var n = favouriteID[13].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#sixthname").html(filmlist["movies"][f].name)
@@ -1361,9 +1376,10 @@ $(function(){
        $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][n]));
        window.location.assign("detail.html"); 
        });
-    		break;
        $("#fifteen").hide();
        $("#sixteen").hide();
+    		break;
+       
     		case 15:
     		var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
@@ -1382,7 +1398,7 @@ $(function(){
     	     var o = favouriteID[14].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#sixthname").html(filmlist["movies"][f].name)
@@ -1551,7 +1567,7 @@ $(function(){
     	     var p = favouriteID[15].id;
            $("#firstname").html(filmlist["movies"][a].name)
            $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
+           $("#thirdname").html(filmlist["movies"][c].name)
            $("#fourthname").html(filmlist["movies"][d].name)
            $("#fifthname").html(filmlist["movies"][e].name)
            $("#sixthname").html(filmlist["movies"][f].name)
@@ -1710,7 +1726,8 @@ $(function(){
        window.location.assign("detail.html"); 
        });
     		break;
-    }
+      };
+    };
 	
 	
 });

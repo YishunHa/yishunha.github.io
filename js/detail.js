@@ -2,7 +2,8 @@ var filmlist = sessionStorage.getItem("chosenFilm");
 var filmID;
 filmlist = JSON.parse(filmlist);
 filmID = filmlist["id"];
-$(function (){
+
+$(function layoutdata(){
    $("#web-title").text(filmlist["name"])
    $("#date").html(filmlist["date"])
    $("#filmtype").html(filmlist["type"])
@@ -65,7 +66,19 @@ function myswitch(){
   	//save to local storage
   	localStorage.setItem('favourite',JSON.stringify(filmcarts));
   	console.log("you had add the film to the favour");
+    };
+    //check whether the favourte list is more than 16
+   if(localStorage.getItem('favourite') == null){ // in case the first didn't exist
+
+  	//init array
+  	var filmcarts = [];
+  	//add to array
+  	filmcarts.push(filmcart);
+  	//save to local storage
+  	localStorage.setItem('favourite',JSON.stringify(filmcarts));
+  	console.log("you had add the film to the favour");
   	}
+  
   	else {
      //get the older data from the localstorage
      var filmcarts = JSON.parse(localStorage.getItem('favourite'));
@@ -77,7 +90,9 @@ function myswitch(){
   	}
   	
   
-  }else{ //remove the film from the favourite list
+  }
+  
+  else{ //remove the film from the favourite list
   	//get the data from the local storage
   	var filmcarts = JSON.parse(localStorage.getItem('favourite'));
   	
@@ -93,7 +108,7 @@ function myswitch(){
   };
 }
 });
-}
+};
 
 
 
