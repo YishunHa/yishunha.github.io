@@ -16,6 +16,12 @@ $(function (){
 		$("#eight").hide();
 		$("#nine").hide();
 		$("#ten").hide();
+		$("#eleven").hide();
+        $("#twelve").hide();
+        $("#thirdteen").hide();
+        $("#fourteen").hide();
+        $("#fifteen").hide();
+        $("#sixteen").hide();
 		
 	}
 		if (localStorage.getItem('favourite') == "[]"){
@@ -30,6 +36,12 @@ $(function (){
 		$("#eight").hide();
 		$("#nine").hide();
 		$("#ten").hide();
+		$("#eleven").hide();
+        $("#twelve").hide();
+        $("#thirdteen").hide();
+        $("#fourteen").hide();
+        $("#fifteen").hide();
+        $("#sixteen").hide();
 		
 	}
 	else
@@ -64,6 +76,12 @@ $(function(){
 		$("#eight").hide();
 		$("#nine").hide();
 		$("#ten").hide();
+		$("#eleven").hide();
+        $("#twelve").hide();
+        $("#thirdteen").hide();
+        $("#fourteen").hide();
+        $("#fifteen").hide();
+        $("#sixteen").hide();
     		break;
     		
     	case 2:
@@ -97,6 +115,12 @@ $(function(){
 		$("#eight").hide();
 		$("#nine").hide();
 		$("#ten").hide();
+		$("#eleven").hide();
+        $("#twelve").hide();
+        $("#thirdteen").hide();
+        $("#fourteen").hide();
+        $("#fifteen").hide();
+        $("#sixteen").hide();
     		break;
     		
     	case 3:
@@ -140,6 +164,12 @@ $(function(){
 		$("#eight").hide();
 		$("#nine").hide();
 		$("#ten").hide();
+		$("#eleven").hide();
+        $("#twelve").hide();
+        $("#thirdteen").hide();
+        $("#fourteen").hide();
+        $("#fifteen").hide();
+        $("#sixteen").hide();
     		break;
     		
     	case 4:
@@ -193,6 +223,12 @@ $(function(){
 		$("#eight").hide();
 		$("#nine").hide();
 		$("#ten").hide();
+		$("#eleven").hide();
+        $("#twelve").hide();
+        $("#thirdteen").hide();
+        $("#fourteen").hide();
+        $("#fifteen").hide();
+        $("#sixteen").hide();
     		break;
     		
     	case 5:
@@ -256,6 +292,12 @@ $(function(){
 		$("#eight").hide();
 		$("#nine").hide();
 		$("#ten").hide();
+		$("#eleven").hide();
+        $("#twelve").hide();
+        $("#thirdteen").hide();
+        $("#fourteen").hide();
+        $("#fifteen").hide();
+        $("#sixteen").hide();
     		break;
      case 6:
     		 var a = favouriteID[0].id;
@@ -328,6 +370,12 @@ $(function(){
 		$("#eight").hide();
 		$("#nine").hide();
 		$("#ten").hide();
+		$("#eleven").hide();
+        $("#twelve").hide();
+        $("#thirdteen").hide();
+        $("#fourteen").hide();
+        $("#fifteen").hide();
+        $("#sixteen").hide();
     		break;
     		case 7:
     		 var a = favouriteID[0].id;
@@ -410,6 +458,12 @@ $(function(){
 		$("#eight").hide();
 		$("#nine").hide();
 		$("#ten").hide();
+		$("#eleven").hide();
+        $("#twelve").hide();
+        $("#thirdteen").hide();
+        $("#fourteen").hide();
+        $("#fifteen").hide();
+        $("#sixteen").hide();
     		break;
     		case 8:
     		 var a = favouriteID[0].id;
@@ -502,6 +556,12 @@ $(function(){
        });
 		$("#nine").hide();
 		$("#ten").hide();
+		$("#eleven").hide();
+        $("#twelve").hide();
+        $("#thirdteen").hide();
+        $("#fourteen").hide();
+        $("#fifteen").hide();
+        $("#sixteen").hide();
     		break;
     		case 9:
     		var a = favouriteID[0].id;
@@ -604,6 +664,12 @@ $(function(){
        window.location.assign("detail.html"); 
        });
 		$("#ten").hide();
+		$("#eleven").hide();
+        $("#twelve").hide();
+        $("#thirdteen").hide();
+        $("#fourteen").hide();
+        $("#fifteen").hide();
+        $("#sixteen").hide();
     		
     		break;
     		case 10:
@@ -717,120 +783,16 @@ $(function(){
        $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][j]));
        window.location.assign("detail.html"); 
        });
+       
+       $("#eleven").hide();
+       $("#twelve").hide();
+       $("#thirdteen").hide();
+       $("#fourteen").hide();
+       $("#fifteen").hide();
+       $("#sixteen").hide();
     		break;
+    		
     		case 11:
-    		var a = favouriteID[0].id;
-    	     var b = favouriteID[1].id;
-    	     var c = favouriteID[2].id;
-    	     var d = favouriteID[3].id;
-    	     var e = favouriteID[4].id;
-    	     var f = favouriteID[5].id;
-    	     var g = favouriteID[6].id;
-    	     var h = favouriteID[7].id;
-    	     var i = favouriteID[8].id;
-    	     var j = favouriteID[9].id;
-           $("#firstname").html(filmlist["movies"][a].name)
-           $("#secondname").html(filmlist["movies"][b].name)
-           $("#thirdname").html(filmlist["movies"][b].name)
-           $("#fourthname").html(filmlist["movies"][d].name)
-           $("#fifthname").html(filmlist["movies"][e].name)
-           $("#sixthname").html(filmlist["movies"][f].name)
-           $("#seventhname").html(filmlist["movies"][g].name)
-           $("#eighthtitle").html(filmlist["movies"][h].name)
-           $("#ninthtitle").html(filmlist["movies"][i].name)
-           $("#tenthtitle").html(filmlist["movies"][j].name)
-           $("#firstcover").attr("src",filmlist["movies"][a].cover)
-           $("#secondcover").attr("src",filmlist["movies"][b].cover)
-           $("#thirdcover").attr("src",filmlist["movies"][c].cover)
-           $("#fourthcover").attr("src",filmlist["movies"][d].cover)
-           $("#fifthcover").attr("src",filmlist["movies"][e].cover)
-           $("#sixthcover").attr("src",filmlist["movies"][f].cover)
-           $("#senventhcover").attr("src",filmlist["movies"][g].cover)
-           $("#eighthcover").attr("src",filmlist["movies"][h].cover)
-           $("#ninthcover").attr("src",filmlist["movies"][i].cover)
-           $("#tenthcover").attr("src",filmlist["movies"][j].cover)
-       $("#one").on("tap",function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][a]));
-       window.location.assign("detail.html"); 
-       });
-       $("#one").click(function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][a]));
-       window.location.assign("detail.html"); 
-       });
-       $("#two").on("tap",function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][b]));
-       window.location.assign("detail.html"); 
-       });
-       $("#two").click(function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][b]));
-       window.location.assign("detail.html"); 
-       });
-       $("#three").on("tap",function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][c]));
-       window.location.assign("detail.html"); 
-       });
-       $("#three").click(function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][c]));
-       window.location.assign("detail.html"); 
-       });
-       $("#fourth").on("tap",function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][d]));
-       window.location.assign("detail.html"); 
-       });
-       $("#fourth").click(function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][d]));
-       window.location.assign("detail.html"); 
-       });
-       $("#five").on("tap",function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][e]));
-       window.location.assign("detail.html"); 
-       });
-       $("#five").click(function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][e]));
-       window.location.assign("detail.html"); 
-       });
-		$("#six").on("tap",function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][f]));
-       window.location.assign("detail.html"); 
-       });
-       $("#six").click(function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][f]));
-       window.location.assign("detail.html"); 
-       });
-		$("#seven").on("tap",function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][g]));
-       window.location.assign("detail.html"); 
-       });
-       $("#seven").click(function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][g]));
-       window.location.assign("detail.html"); 
-       });
-       $("#eight").on("tap",function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][h]));
-       window.location.assign("detail.html"); 
-       });
-       $("#eight").click(function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][h]));
-       window.location.assign("detail.html"); 
-       });
-       $("#nine").on("tap",function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][i]));
-       window.location.assign("detail.html"); 
-       });
-       $("#nine").click(function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][i]));
-       window.location.assign("detail.html"); 
-       });
-		$("#ten").on("tap",function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][j]));
-       window.location.assign("detail.html"); 
-       });
-       $("#ten").click(function(){
-       $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][j]));
-       window.location.assign("detail.html"); 
-       });
-    		break;
-    		case 12:
     		var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
     	     var c = favouriteID[2].id;
@@ -952,8 +914,13 @@ $(function(){
        $.session.set('chosenFilm', JSON.stringify(filmlist["movies"][k]));
        window.location.assign("detail.html"); 
        });
+       $("#twelve").hide();
+       $("#thirdteen").hide();
+       $("#fourteen").hide();
+       $("#fifteen").hide();
+       $("#sixteen").hide();
     		break;
-    		case 13:
+    		case 12:
     		var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
     	     var c = favouriteID[2].id;
@@ -1087,6 +1054,10 @@ $(function(){
        window.location.assign("detail.html"); 
        });
     		break;
+       $("#thirdteen").hide();
+       $("#fourteen").hide();
+       $("#fifteen").hide();
+       $("#sixteen").hide();
     		case 13:
     		var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
@@ -1232,6 +1203,9 @@ $(function(){
        window.location.assign("detail.html"); 
        });
     		break;
+       $("#fourteen").hide();
+       $("#fifteen").hide();
+       $("#sixteen").hide();
     		case 14:
     		var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
@@ -1388,6 +1362,8 @@ $(function(){
        window.location.assign("detail.html"); 
        });
     		break;
+       $("#fifteen").hide();
+       $("#sixteen").hide();
     		case 15:
     		var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
@@ -1555,7 +1531,8 @@ $(function(){
        window.location.assign("detail.html"); 
        });
     		break;
-    		case 15:
+       $("#sixteen").hide();
+    		case 16:
     		var a = favouriteID[0].id;
     	     var b = favouriteID[1].id;
     	     var c = favouriteID[2].id;
