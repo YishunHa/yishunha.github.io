@@ -52,17 +52,17 @@ function myswitch(){
   	filmcarts.push(filmcart);
   	//save to local storage
   	localStorage.setItem('favourite',JSON.stringify(filmcarts));
-  	 var favouriteamount = JSON.parse(localStorage.getItem('favourite'));
+  	var favouriteamount = JSON.parse(localStorage.getItem('favourite'));
     	mui.toast('Success! Now you have subcribe'+ ' ' + favouriteamount.length +' '+ 'films.');
   	console.log("you had add the film to the favour");
     };
     //check whether the favourte list is more than 16
-   if( favouritelimit.length > 16){ 
+   if( favouritelimit.length > 15){ 
 
   	$("#mySwitch").hide();
   	$("#subs").text("Subscrition films are out of limits");
   	  	//alert("your favourite list is out of limit");
-    mui.alert('Opps,look like you had subscribed too much films','Error','btnValue',function (e) {
+    mui.alert('Opps,look like you had subscribed too much films','Error','Ok',function (e) {
        e.index
     },'div');
 
