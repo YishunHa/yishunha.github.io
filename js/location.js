@@ -8,7 +8,9 @@ var result;
 navigator.geolocation.getCurrentPosition(getpostition, doesntwork);
 
 function doesntwork(){
-	alert("Please give location permission!!");
+	mui.confirm('Please give location permission!!','Error',['No','Yes'],function (e) {
+		e.index
+	},'div');
 	console.log('There is an error when try to get the location!')
 }
 
@@ -73,6 +75,7 @@ function callback(results, status) {
     }
   }
     mui("#shows").progressbar().setProgress(100);
+    mui.toast('Loading complete !')
     cinemas();
 }
 
