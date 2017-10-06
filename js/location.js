@@ -55,7 +55,7 @@ function initMap() {
 
 function callback(results, status) {
       var marker2 = new google.maps.Marker({
-      position: {lat: 53.641313700000005, lng: -1.7764444},
+      position: {lat: latitude, lng: longitude},
         animation: google.maps.Animation.DROP,
         map: map,
         title: 'Current location'
